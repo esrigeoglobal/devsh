@@ -149,24 +149,24 @@ gcloud version
 #gsutil version -l
 #echo
 #bq version
-echo
-echo
+printf "%s\n"
+printf "%s\n"
 
 # ============================================================================ #
 . "$srcdir/gcp_info_auth_config.sh"
-echo
-echo
+printf "%s\n"
+printf "%s\n"
 
 # ============================================================================ #
 . "$srcdir/gcp_info_projects.sh"
-echo
-echo
+printf "%s\n"
+printf "%s\n"
 
 # ============================================================================ #
 # this is done after gcp_info_projects.sh because that enforces having a project set
-echo "LISTING INFO FOR PROJECT:  $(gcloud info --format="get(config.project)")"
-echo
-echo
+printf "%s\n" "LISTING INFO FOR PROJECT:  $(gcloud info --format="get(config.project)")"
+printf "%s\n"
+printf "%s\n"
 
 # ============================================================================ #
 . "$srcdir/gcp_info_services.sh"
