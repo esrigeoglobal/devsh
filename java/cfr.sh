@@ -10,7 +10,7 @@
 #
 #  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
 #
-#  https://www.linkedin.com/in/HariSekhon
+#  DevopSec
 #
 
 set -euo pipefail
@@ -34,11 +34,11 @@ Examples:
 "
 
 # used by usage() in lib/utils.sh
-# shellcheck disable=SC2034
+shellcheck disable=SC2034
 usage_args="<jar_or_java.class>"
 
 # let see the help from tool instead
-#help_usage "$@"
+help_usage "$@"
 
 min_args 1 "$@"
 
